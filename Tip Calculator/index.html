@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>TipCalculator</title>
+  </head>
+  <body>
+    <div class="title">TIP SPLITTER</div>
+    <div class="tip__container">
+      <div class="row">
+        <div class="col-lg-6 calculation--container">
+          <div class="bill--container">
+            <label>BILLS</label>
+            <input
+              type="text"
+              class="input-elements bill-amount"
+              placeholder="$"
+            />
+          </div>
+          <div class="num__of--person">
+            <label>Number Of Person</label>
+            <input type="text" class="person-num" />
+          </div>
+          <div class="tip__selection--container">
+            <label>Select Tip</label>
+            <div class="row row-cols-3 mt-1">
+              <div class="col">
+                <button class="tip__percentage--btn percentage-btn">5%</button>
+              </div>
+              <div class="col">
+                <button class="tip__percentage--btn percentage-btn">10%</button>
+              </div>
+              <div class="col">
+                <button class="tip__percentage--btn percentage-btn">15%</button>
+              </div>
+              <div class="col mt-2">
+                <button class="tip__percentage--btn percentage-btn">20%</button>
+              </div>
+              <div class="col mt-2">
+                <button class="tip__percentage--btn percentage-btn">25%</button>
+              </div>
+              <div class="col mt-2">
+                <button class="tip__percentage--btn percentage-btn">30%</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 result--container">
+          <div class="tip__amount--container mt-2">
+            <p class="amount-text">
+              Tip Amount <br />
+              <span>per person</span>
+            </p>
+            <h2 class="amount-number tip-amount">$ 0.00</h2>
+          </div>
+          <div class="tip__amount--container mt-4">
+            <p class="amount-text">
+              Total<br />
+              <span>per person</span>
+            </p>
+            <h2 class="amount-number total-amount">$ 0.00</h2>
+          </div>
+          <p class="error-show"></p>
+          <button class="reset-btn">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
